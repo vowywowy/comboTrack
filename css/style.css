@@ -1,0 +1,37 @@
+*{
+	box-sizing: border-box;
+}
+
+html,
+body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form{
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	max-width: min-content;
+	margin: 0;
+}
+
+input{
+	display: flex;
+}
+
+input[type=submit]{
+	align-self: flex-end;
+	cursor: pointer;
+}
+
+form > * + *{
+	margin-top: 8px;
+}
